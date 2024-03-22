@@ -1,0 +1,12 @@
+import math
+print ("Let's do some math calculation with two numbers :")
+input_interger1 = int(input("Enter Number 1: "))
+input_interger2 = int(input("Enter Number 2: "))
+print()
+print ("If these were height and width of a rectangle the area is:", input_interger1 * input_interger2)
+print()
+print ("The maximum of these two numbers is :", max(input_interger1, input_interger2))
+print()
+print ("If these two numbers were hours, that would be ", ((input_interger1 + input_interger2) * 60), "minutes: ")
+print()
+print ("Dividing Number 1 by Number 2, to a value of two 2 decimals is: %0.2f" % (input_interger1 / input_interger2))
