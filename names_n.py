@@ -5,4 +5,3 @@
 #         names_n.append(name)
 # for name in names_n:
 #     print(name.title())
-print(max([1,2,3]))
