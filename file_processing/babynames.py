@@ -1,14 +1,16 @@
 def get_popular_boy_names(infile):
+    '''@return A list with boy name, percentage '''
     boys = []
     for line in infile:
         data = line.rstrip().split()
-        boys.append(data[0:3])
+        boys.append(data[1:3])
         for boy in boys:
             boy[-1] = str(boy[-1]).rstrip("%")
             boy[-1] = float(boy[-1])
     return boys
 
 def get_popular_girl_names(infile):
+    '''@return A list with girl name, percentage '''
     infile.seek(0) #sets pointer to beginning because boys function sets the pointer to end
     girls = []
     for line in infile:
@@ -21,6 +23,6 @@ def get_popular_girl_names(infile):
 
 try:
     with open("name_data.txt", "r") as infile:       
-        print(get_popular_girl_names(infile))    
+        print(get_popular_boy_names(infile))    
 except FileNotFoundError:
     print("File not found!")
