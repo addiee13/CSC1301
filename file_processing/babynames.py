@@ -20,9 +20,21 @@ def get_popular_girl_names(infile):
            girl[-1] = float(str(girl[-1]).rstrip("%"))  
     return girls
 
+def get_top_50_boy(infile):
+    boys = get_popular_boy_names(infile)
+    percent = 0
+    for boy in boys:
+        percent += (boy[-1])
+    boys_50 = []
+    count = 0 
+    for boy in boys:
+        if count <= percent/2:
+            boys_50.append(boy[0])
+            count += boy[1]
+    return boys_50
 
 try:
-    with open("name_data.txt", "r") as infile:       
-        print(get_popular_boy_names(infile))    
+    with open("name_data.txt", "r") as infile:   
+        print(f"The top 50% of 100 most common names are:   {get_top_50_boy(infile)}")    
 except FileNotFoundError:
     print("File not found!")
