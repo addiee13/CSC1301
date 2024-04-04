@@ -1,4 +1,4 @@
-students = ["Adam", "Riyan", "MAhean", "Parsa", "Ayuuhman"]
+students = ["Adam", "Riyan", "Mahean", "Parsa", "Ayuuhman"]
 cs_club = ["Adam", "Riyan"]
 math_club = ["Mahean"]
 for student in students:
