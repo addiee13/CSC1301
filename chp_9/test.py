@@ -1,3 +1,3 @@
 import numpy
-num = numpy.sin(2)
+num = numpy.sin(180)
 print(num)
