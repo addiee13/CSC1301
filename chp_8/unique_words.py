@@ -6,11 +6,11 @@ def clean(word):
     return result
             
 with open("speech.txt", "r") as infile:
-    for line in infile:
-        words = line.split()
+    data = infile.read()
+    words = data.split()
     for word in set(words):
         word = clean(word)
         # word = word.strip('"“”.,-')
         print(word)
-    print(f"The Gettysburg Address has {len(set(words))} unique words.")
+    print(f"The text has {len(set(words))} unique words.")
     
