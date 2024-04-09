@@ -7,3 +7,10 @@ def get_avg():
     return name, avg
 name , avg = get_avg()
 print(f"The average test score of {name.title()} is {avg:.2f}!")
+
+
+# OUTPUT
+# # Enter the score for test 1: 98
+# Enter the score for test 2: 97
+# Enter the score for test 3: 87
+# The average test score of Adam is 94.00!
