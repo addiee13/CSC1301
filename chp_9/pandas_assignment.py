@@ -7,7 +7,7 @@ df = pd.DataFrame(
         [4.0, 5.0, 6.0],
         [7.0, 8.0, 9.0],
         [np.nan, np.nan, np.nan]],
-        columns= ["A", "B", "C"],
+        columns= ["A", "B", "C"]
     )
 print(df)
 
